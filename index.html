@@ -522,6 +522,8 @@
       text-align: center;
     }
 
+    .mobile-title-break { display: none; }
+
     h2 {
       margin-bottom: 20px;
       font-size: clamp(35px, 4.8vw, 58px);
@@ -1166,6 +1168,40 @@
       .section { padding: 88px 0; }
       .section-compact { padding: 68px 0; }
       .section-heading { margin-bottom: 36px; }
+      .pricing .section-heading { margin-bottom: 30px; }
+      .pricing .section-heading .eyebrow {
+        margin-bottom: 20px;
+        font-size: 12px;
+        letter-spacing: .16em;
+      }
+      .pricing .section-heading h2 {
+        max-width: 340px;
+        margin-bottom: 18px;
+        font-size: clamp(34px, 9.6vw, 40px);
+        line-height: 1.25;
+        letter-spacing: -.04em;
+      }
+      .mobile-title-break { display: block; }
+      .pricing .section-heading .lead {
+        max-width: 335px;
+        font-size: 15px;
+        line-height: 1.8;
+        letter-spacing: .01em;
+      }
+      .pricing .section-heading .contact-qq {
+        display: inline-flex;
+        width: auto;
+        align-items: center;
+        gap: 7px;
+        margin-top: 18px;
+        padding: 9px 15px;
+        border: 1px solid rgba(120, 166, 235, .18);
+        border-radius: 999px;
+        background: rgba(48, 99, 180, .08);
+        font-size: 13px;
+        line-height: 1.2;
+      }
+      .pricing .section-heading .contact-qq strong { font-size: 14px; }
       .feature-card.large, .feature-card.small { grid-column: 1 / -1; }
       .feature-card { min-height: 305px; padding: 28px; }
       .feature-number { margin-bottom: 58px; }
@@ -1338,7 +1374,7 @@
       <div class="container">
         <header class="section-heading center">
           <p class="eyebrow">定价方案</p>
-          <h2>选择适合你的使用周期。</h2>
+          <h2>选择适合你的<br class="mobile-title-break">使用周期</h2>
           <p class="lead">通过兑换码开通。下单前请先确认设备兼容性、试用安排与服务规则。</p>
           <p class="contact-qq">QQ 咨询：<strong>3089196102</strong></p>
         </header>
