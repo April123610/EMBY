@@ -7,7 +7,7 @@
   <meta name="color-scheme" content="dark">
   <meta name="description" content="现代、稳定、便捷的私人影视媒体库体验，支持多设备播放、高清片源与灵活访问周期。">
   <meta property="og:title" content="私人影视媒体库｜让每一次观影，都更简单">
-  <meta property="og:description" content="持续维护的片库、多设备支持与清晰透明的访问方案。">
+  <meta property="og:description" content="持续维护的片库、多设备支持与清晰透明的定价方案。">
   <meta property="og:type" content="website">
   <title>私人影视媒体库｜让每一次观影，都更简单</title>
   <style>
@@ -507,6 +507,20 @@
 
     .section-heading.center .eyebrow { justify-content: center; }
     .section-heading.center .eyebrow::after { content: ""; width: 28px; height: 1px; background: currentColor; }
+
+    .pricing .section-heading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .pricing .section-heading h2,
+    .pricing .section-heading .lead,
+    .pricing .section-heading .contact-qq {
+      width: 100%;
+      text-align: center;
+    }
 
     h2 {
       margin-bottom: 20px;
@@ -1203,7 +1217,7 @@
       <div class="nav-links" id="nav-links">
         <a href="#features">服务特点</a>
         <a href="#experience">使用体验</a>
-        <a href="#plans">访问方案</a>
+        <a href="#plans">定价方案</a>
         <a href="#faq">常见问题</a>
         <a class="nav-cta" href="https://m.tb.cn/h.j3mLuM0?tk=AerhTwhQVfM" target="_blank" rel="noopener noreferrer" data-consult>咨询开通</a>
       </div>
@@ -1233,7 +1247,7 @@
           <h1>让每一次观影，<br><span class="gradient-text">都更简单。</span></h1>
           <p class="hero-copy">电影、剧集、动漫、纪录片与演唱会内容集中管理，配合清晰的分类与搜索，让你在喜欢的设备上快速进入观影状态。</p>
           <div class="hero-actions">
-            <a class="button" href="#plans">查看访问方案 <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="button" href="#plans">查看定价方案 <span class="arrow" aria-hidden="true">→</span></a>
             <a class="button secondary" href="https://m.tb.cn/h.j3mLuM0?tk=AerhTwhQVfM" target="_blank" rel="noopener noreferrer" data-consult data-plan="试用">咨询试用</a>
           </div>
           <div class="trust-row" aria-label="服务概览">
@@ -1313,7 +1327,7 @@
           <p class="lead">先确认设备与网络，再选择合适的访问周期。开通方式保持简单，也把必要的限制说明清楚。</p>
           <ol class="step-list">
             <li class="step"><span class="step-index">01</span><span><strong>咨询与测试</strong><span>说明常用设备和网络环境，咨询当前可用的试用安排。</span></span></li>
-            <li class="step"><span class="step-index">02</span><span><strong>确认访问方案</strong><span>根据实际体验选择月卡、季卡或年卡。</span></span></li>
+            <li class="step"><span class="step-index">02</span><span><strong>确认定价方案</strong><span>根据实际体验选择月卡、季卡或年卡。</span></span></li>
             <li class="step"><span class="step-index">03</span><span><strong>登录开始观看</strong><span>在兼容的客户端中添加媒体库，搜索并播放想看的内容。</span></span></li>
           </ol>
         </div>
@@ -1323,7 +1337,7 @@
     <section class="section pricing" id="plans">
       <div class="container">
         <header class="section-heading center">
-          <p class="eyebrow">访问方案</p>
+          <p class="eyebrow">定价方案</p>
           <h2>选择适合你的使用周期。</h2>
           <p class="lead">通过兑换码开通。下单前请先确认设备兼容性、试用安排与服务规则。</p>
           <p class="contact-qq">QQ 咨询：<strong>3089196102</strong></p>
@@ -1379,7 +1393,7 @@
           </details>
           <details>
             <summary>4K 超清对设备有什么要求？</summary>
-            <div class="faq-answer">4K 超清播放取决于具体片源、设备解码能力、客户端设置和网络带宽，并非所有内容或使用环境都相同。建议先用常用设备测试，再选择访问方案。</div>
+            <div class="faq-answer">4K 超清播放取决于具体片源、设备解码能力、客户端设置和网络带宽，并非所有内容或使用环境都相同。建议先用常用设备测试，再选择定价方案。</div>
           </details>
           <details>
             <summary>播放速度是否有保证？</summary>
@@ -1403,7 +1417,7 @@
     <div class="container">
       <div class="footer-main">
         <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"></span><span>私人影视媒体库</span></a>
-        <div class="footer-links"><a href="#features">服务特点</a><a href="#plans">访问方案</a><a href="#faq">常见问题</a></div>
+        <div class="footer-links"><a href="#features">服务特点</a><a href="#plans">定价方案</a><a href="#faq">常见问题</a></div>
       </div>
       <div class="footer-bottom">
         <span>© <span id="year"></span> 私人影视媒体库</span>
@@ -1484,7 +1498,7 @@
       }
 
       link.addEventListener("click", event => {
-        const selectedPlan = link.dataset.plan || "访问方案";
+        const selectedPlan = link.dataset.plan || "定价方案";
 
         if (CONSULT_URL.trim()) {
           return;
