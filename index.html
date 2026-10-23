@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMBY 媒体服务</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, "Microsoft YaHei", sans-serif;
+      background: #0b1020;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    header {
+      padding: 24px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+      color: #52d273;
+    }
+
+    nav a {
+      color: #ddd;
+      text-decoration: none;
+      margin-left: 22px;
+    }
+
+    .hero {
+      padding: 110px 0 80px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #52d273;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: auto;
+      color: #aeb7ca;
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 35px;
+      padding: 14px 30px;
+      border-radius: 10px;
+      background: #52d273;
+      color: #07110a;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .features {
+      padding: 60px 0 90px;
+    }
+
+    .features h2 {
+      text-align: center;
+      font-size: 34px;
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: #121a2e;
+      padding: 28px;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .card h3 {
+      color: #52d273;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #aeb7ca;
+    }
+
+    .pricing {
+      padding: 80px 0;
+      text-align: center;
+      background: #0e1527;
+    }
+
+    .pricing h2 {
+      font-size: 34px;
+      margin-bottom: 40px;
+    }
+
+    .price-box {
+      max-width: 700px;
+      margin: auto;
+      background: #121a2e;
+      padding: 35px;
+      border-radius: 18px;
+    }
+
+    .prices {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .price {
+      min-width: 120px;
+    }
+
+    .price strong {
+      display: block;
+      font-size: 26px;
+      color: #52d273;
+    }
+
+    footer {
+      text-align: center;
+      padding: 35px;
+      color: #65708a;
+    }
+
+    @media (max-width: 800px) {
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      nav .links {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">EMBY</div>
+
+      <div class="links">
+        <a href="#features">服务特色</a>
+        <a href="#pricing">套餐</a>
+        <a href="#contact">联系</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>你的私人 <span>EMBY</span> 媒体中心</h1>
+
+    <p>
+      丰富的电影、剧集与动漫内容，多设备支持，
+      提供稳定流畅的家庭影音体验。
+    </p>
+
+    <a class="btn" href="#pricing">查看服务</a>
+  </div>
+</section>
+
+<section class="features" id="features">
+  <div class="container">
+
+    <h2>服务特色</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>丰富内容</h3>
+        <p>
+          电影、电视剧、动漫等多类型内容持续整理更新。
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>高速访问</h3>
+        <p>
+          优化网络访问体验，在不同网络环境下保持流畅播放。
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>多端支持</h3>
+        <p>
+          支持手机、平板、电脑、电视等多种设备。
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>高清体验</h3>
+        <p>
+          支持高清及高码率内容，打造更好的家庭影音体验。
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>持续维护</h3>
+        <p>
+          媒体库持续整理，并对播放线路和服务进行维护。
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>试用体验</h3>
+        <p>
+          支持试用，体验满意后再选择适合自己的服务周期。
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+
+  <div class="container">
+
+    <h2>服务套餐</h2>
+
+    <div class="price-box">
+
+      <div class="prices">
+
+        <div class="price">
+          <span>月卡</span>
+          <strong>¥12</strong>
+        </div>
+
+        <div class="price">
+          <span>季卡</span>
+          <strong>¥32</strong>
+        </div>
+
+        <div class="price">
+          <span>年卡</span>
+          <strong>¥120</strong>
+        </div>
+
+      </div>
+
+      <a class="btn" href="#contact">咨询详情</a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<footer id="contact">
+  EMBY MEDIA SERVICE<br>
+  请通过你的联系方式咨询服务详情
+</footer>
+
+</body>
+</html>
